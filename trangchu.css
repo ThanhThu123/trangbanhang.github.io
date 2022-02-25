@@ -1,0 +1,236 @@
+body{
+    padding: 0 px;
+    margin: 0 px;
+
+}
+.container{
+    width: 90%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container header img {
+    width: 90%;
+    margin-top: 50px;
+    margin-left: 65px;
+}
+.container > header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container > nav{
+    line-height: 40px;
+    background-color: white;
+    color: white;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+.container footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(228, 226, 226);
+    margin-top: 20px;
+}
+.container footer .information{
+    line-height: 25px;
+    width: 100%;
+    padding-left: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+.container footer .information .lienhe{
+    width: 50%;
+}
+.container footer .information .lienhe p{
+    margin: 0px;
+    font-weight: bold;
+}
+
+.container > nav > a{
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.container > nav > a:hover{
+    color: yellow;
+    text-decoration: underline;
+}
+
+.hmenu{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px white;
+    height: 40px;
+    
+}
+ul.hmenu>li>a{
+    display: block;
+    line-height: 40px;
+    text-decoration: none;
+    font-variant: small-caps;
+    padding-left: 25px;
+    color: black;
+
+}
+ul.hmenu>li>a:hover{
+    color: red;
+    font-weight: bolder;
+}
+ul.hmenu>li{
+    float: left;
+    margin: 0 5px;
+    position: relative;
+}
+ul.hmenu>li:hover>.sub-menu{
+    display: block;
+}
+.sub-menu{
+    margin: 0px;
+    padding: 0px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px orangered;
+    list-style: none;
+    width: 150px;
+    position: absolute;
+    display: none;
+}
+.sub-menu>li>a{
+    display: block;
+    line-height: 30px;
+    border-bottom: 1px dotted orangered;
+    text-decoration: none;
+    font-variant: small-caps;
+    padding-left: 25px;
+    background: no-repeat left center;
+    color:orangered;
+}
+.sub-menu>li>a:hover{
+    background: no-repeat left center;
+    color: red;
+    font-weight: bolder;
+}
+.banner{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(245, 240, 240, 0.226);
+    margin-top: 40px;
+}
+.banner .conter{
+    width: 100%;
+    margin: 0px 35px 0px 35px;
+}
+.banner .conter img{
+    width: 100%;
+    height: 180px;
+}
+
+#aside{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+h2{
+    font-size: 30px;
+    color: black;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 1px solid #bebebe;
+    display: inline-block;
+    font-weight: 700;
+}
+.headline{
+    text-align: center;
+    margin: 40px 0px;
+}
+h1{
+    font-size: 30px;
+    color: black;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 1px solid #bebebe;
+    display: inline-block;
+    font-weight: 700;
+    text-align: center;
+    margin: 40px 0px;
+}
+
+
+ul.products{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+ul.products li{
+    flex-basis: 25%;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+ul.products li img{
+    
+    max-width: 460px;
+    border-radius: 20px;
+}
+ul.products li .products-top{
+    position: relative;
+    overflow: hidden;
+}
+ul.products li .products-top .products-thumb{
+    display: block;
+}
+ul.products li:hover .products-top .products-thumb img{
+    filter: opacity(80%);
+}
+ul.products li .products-top .products-thumb img{
+    display: block;
+}
+ul.products li .products-top a.buy-now{
+    text-transform:uppercase;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    background-color: #446084;
+    color: #fff;
+    padding: 10px 0px;
+    position: absolute;
+    width: 100%;
+    bottom: -36px;
+    transition: 0.25s ease-in-out;
+    opacity: 0.85;
+}
+ul.products li:hover a.buy-now{
+    bottom: 0px;
+
+}
+ul.products li .products-info{
+    padding: 10px 0px;
+}
+ul.products li .products-info a{
+    display: block;
+    text-decoration: none;
+}
+ul.products li .products-info a.products-name{
+    color: black;
+    padding: 3px 0px;
+}
+ul.products li .products-info .products-price{
+    color: black;
+    padding: 2px 0px;
+    font-weight: 600;
+}
+.tintuc {
+    font-size: 20px;
+}
